@@ -1,0 +1,502 @@
+Nmap scan report for 10.10.10.1
+Host is up (0.051s latency).
+Not shown: 998 closed tcp ports (reset), 976 closed udp ports (port-unreach)
+PORT      STATE         SERVICE         VERSION
+22/tcp    open          ssh             OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 d3:79:03:81:64:78:4b:2d:cd:7d:6d:61:0e:20:87:88 (RSA)
+|   256 f8:42:e4:a1:a2:64:0d:5a:9e:5e:50:86:75:66:7a:81 (ECDSA)
+|_  256 0d:85:54:61:e6:5c:fd:28:6f:e4:86:96:e0:b8:72:3b (ED25519)
+80/tcp    open          http            nginx 1.18.0 (Ubuntu)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET HEAD
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+137/udp   open|filtered netbios-ns
+158/udp   open|filtered pcmail-srv
+626/udp   open|filtered serialnumberd
+782/udp   open|filtered hp-managed-node
+8193/udp  open|filtered sophos
+9001/udp  open|filtered etlservicemgr
+54321/udp open|filtered bo2k
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=22%CT=1%CU=2%PV=Y%DS=1%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=108%TI=Z%CI=Z%TS=A)OPS(O1=M564S
+OS:T11NWA%O2=M564ST11NWA%O3=M564NNT11NWA%O4=M564ST11NWA%O5=M564ST11NWA%O6=M
+OS:564ST11)WIN(W1=A5A8%W2=A5A8%W3=A5A8%W4=A5A8%W5=A5A8%W6=A5A8)ECN(R=Y%DF=Y
+OS:%T=40%W=A71C%O=M564NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=
+OS:)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T
+OS:=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=
+OS:0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=
+OS:164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=N)
+
+Uptime guess: 7.253 days (since Sat May 21 11:58:00 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   50.80 ms 10.10.10.1
+
+Nmap scan report for 10.10.10.9
+Host is up (0.050s latency).
+Not shown: 999 closed tcp ports (reset), 983 closed udp ports (port-unreach)
+PORT      STATE         SERVICE         VERSION
+22/tcp    open          ssh             OpenSSH 7.6p1 Ubuntu 4ubuntu0.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 88:44:ee:23:42:e3:14:df:22:86:37:49:65:cc:4b:80 (RSA)
+|   256 47:a0:9b:cd:c6:0e:37:7c:2b:99:66:74:1a:b2:60:0b (ECDSA)
+|_  256 eb:a3:50:82:d7:a4:91:e4:c9:80:73:94:5d:50:ea:24 (ED25519)
+782/udp   open|filtered hp-managed-node
+1484/udp  open|filtered confluent
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=22%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=FD%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M
+OS:5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA%
+OS:O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y%
+OS:DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 16.174 days (since Thu May 12 13:51:33 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=253 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   49.92 ms 10.10.10.9
+
+Nmap scan report for 10.10.10.10
+Host is up (0.050s latency).
+Not shown: 998 closed tcp ports (reset), 979 closed udp ports (port-unreach)
+PORT      STATE         SERVICE     VERSION
+22/tcp    open          ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b3:f9:71:4b:10:8e:99:a7:37:a5:45:5f:34:5c:35:68 (RSA)
+|   256 0d:46:90:69:95:67:eb:7a:05:f9:62:eb:65:2d:88:1e (ECDSA)
+|_  256 e8:49:b0:a5:1f:9c:43:ef:a3:c3:d1:ed:96:31:ae:cb (ED25519)
+53/tcp    open          domain      dnsmasq 2.75
+53/udp    open          domain      dnsmasq 2.75
+| dns-nsid: 
+|   NSID: 19m575 (31396d353735)
+|   id.server: CDG
+|_  bind.version: dnsmasq-2.75
+|_dns-recursion: Recursion appears to be enabled
+120/udp   open|filtered cfdptkt
+2048/udp  open|filtered dls-monitor
+9200/udp  open|filtered wap-wsp
+31337/udp open|filtered BackOrifice
+|_backorifice-info: ERROR: Script execution failed (use -d to debug)
+47808/udp open|filtered bacnet
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=22%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=108%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(O1=
+OS:M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA
+OS:%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y
+OS:%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD
+OS:=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 48.538 days (since Sun Apr 10 05:07:27 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=264 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   49.93 ms 10.10.10.10
+
+Nmap scan report for 10.10.10.11
+Host is up (0.051s latency).
+Not shown: 998 closed tcp ports (reset), 982 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+22/tcp    open          ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 b3:f9:71:4b:10:8e:99:a7:37:a5:45:5f:34:5c:35:68 (RSA)
+|   256 0d:46:90:69:95:67:eb:7a:05:f9:62:eb:65:2d:88:1e (ECDSA)
+|_  256 e8:49:b0:a5:1f:9c:43:ef:a3:c3:d1:ed:96:31:ae:cb (ED25519)
+53/tcp    open          domain  dnsmasq 2.75
+53/udp    open          domain  dnsmasq 2.75
+|_dns-recursion: Recursion appears to be enabled
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.75
+1037/udp  open|filtered ams
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=22%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=FE%GCD=1%ISR=10E%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M
+OS:5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA%
+OS:O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y%
+OS:DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 26.361 days (since Mon May  2 09:22:24 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=254 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   51.39 ms 10.10.10.11
+
+Nmap scan report for 10.10.10.22
+Host is up (0.052s latency).
+Not shown: 998 closed tcp ports (reset), 986 closed udp ports (port-unreach)
+PORT      STATE         SERVICE     VERSION
+139/tcp   open          netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp   open          netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+1037/udp  open|filtered ams
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=139%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P
+OS:=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)OPS(O1
+OS:=M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NW
+OS:A%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=
+OS:Y%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%R
+OS:D=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%
+OS:DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%
+OS:O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=4
+OS:0%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 45.171 days (since Wed Apr 13 13:56:08 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: LINUXSERVER
+
+Host script results:
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: fileshare
+|   NetBIOS computer name: LINUXSERVER\x00
+|   Domain name: \x00
+|   FQDN: fileshare
+|_  System time: 2022-05-28T16:00:58+00:00
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: 1s, deviation: 3s, median: 0s
+| smb2-time: 
+|   date: 2022-05-28T16:00:56
+|_  start_date: N/A
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   51.69 ms 10.10.10.22
+
+Nmap scan report for 10.10.10.24
+Host is up (0.050s latency).
+Not shown: 1000 closed tcp ports (reset), 988 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+17302/udp open|filtered unknown
+18373/udp open|filtered unknown
+21333/udp open|filtered unknown
+21576/udp open|filtered unknown
+22986/udp open|filtered unknown
+23176/udp open|filtered unknown
+36458/udp open|filtered unknown
+44253/udp open|filtered unknown
+49178/udp open|filtered unknown
+49195/udp open|filtered unknown
+49196/udp open|filtered unknown
+59765/udp open|filtered unknown
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   49.89 ms 10.10.10.24
+
+Nmap scan report for 10.10.10.26
+Host is up (0.050s latency).
+Not shown: 1000 closed tcp ports (reset), 985 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+68/udp    open|filtered dhcpc
+54321/udp open|filtered bo2k
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   49.76 ms 10.10.10.26
+
+Nmap scan report for 10.10.10.34
+Host is up (0.050s latency).
+Not shown: 1000 closed tcp ports (reset), 987 closed udp ports (port-unreach)
+PORT      STATE         SERVICE   VERSION
+49/udp    open|filtered tacacs
+68/udp    open|filtered dhcpc
+1484/udp  open|filtered confluent
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   49.86 ms 10.10.10.34
+
+Nmap scan report for 10.10.10.48
+Host is up (0.052s latency).
+Not shown: 999 closed tcp ports (reset), 988 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+80/tcp    open          http    Node.js Express framework
+|_http-cors: HEAD GET POST PUT DELETE PATCH
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Thermostat 002 - Control Panel
+8193/udp  open|filtered sophos
+54321/udp open|filtered bo2k
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=80%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=108%TI=Z%CI=Z%II=I%TS=A)OPS(O1=
+OS:M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA
+OS:%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y
+OS:%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD
+OS:=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 18.378 days (since Tue May 10 08:57:12 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   51.62 ms 10.10.10.48
+
+Nmap scan report for 10.10.10.53
+Host is up (0.050s latency).
+Not shown: 998 closed tcp ports (reset), 992 closed udp ports (port-unreach)
+PORT      STATE         SERVICE     VERSION
+21/tcp    open          ftp         vsftpd 2.3.4
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 10.10.0.13
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+22/tcp    open          ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 cf:8d:61:14:79:fc:d0:3d:08:c5:33:1c:cb:1b:55:86 (RSA)
+|   256 7f:26:2e:2d:21:7b:6c:a4:68:eb:a1:5b:ca:90:8a:68 (ECDSA)
+|_  256 01:a3:14:81:08:ee:6e:2a:57:91:4a:27:f7:43:11:0c (ED25519)
+2048/udp  open|filtered dls-monitor
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=21%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=A)OPS(O1=
+OS:M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA
+OS:%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y
+OS:%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD
+OS:=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 44.046 days (since Thu Apr 14 16:55:25 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   50.46 ms 10.10.10.53
+
+Nmap scan report for 10.10.10.55
+Host is up (0.050s latency).
+Not shown: 999 closed tcp ports (reset), 992 closed udp ports (port-unreach)
+PORT      STATE         SERVICE         VERSION
+80/tcp    open          http            Node.js Express framework
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Thermostat 007 - Control Panel
+|_http-cors: HEAD GET POST PUT DELETE PATCH
+782/udp   open|filtered hp-managed-node
+1484/udp  open|filtered confluent
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=80%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=10D%TI=Z%CI=Z%II=I%TS=A)OPS(O1=
+OS:M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA
+OS:%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y
+OS:%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD
+OS:=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 28.393 days (since Sat Apr 30 08:35:44 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   50.35 ms 10.10.10.55
+
+Nmap scan report for 10.10.10.84
+Host is up (0.050s latency).
+Not shown: 999 closed tcp ports (reset), 997 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+22/tcp    open          ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.10 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 f1:75:4f:79:1f:fd:50:f4:82:6e:8d:48:11:95:b6:20 (RSA)
+|   256 97:56:47:16:43:a1:81:80:31:09:92:b1:2a:ef:89:f3 (ECDSA)
+|_  256 db:4a:96:d8:ce:5a:41:58:18:09:0e:77:af:c6:cc:bf (ED25519)
+54321/udp open|filtered bo2k
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=22%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=F6%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M
+OS:5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA%
+OS:O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y%
+OS:DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=
+OS:0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF
+OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=
+OS:%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%
+OS:IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 16.685 days (since Thu May 12 01:35:19 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=246 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   50.28 ms 10.10.10.84
+
+Nmap scan report for 10.10.10.132
+Host is up (0.050s latency).
+Not shown: 1000 closed tcp ports (reset), 998 closed udp ports (port-unreach)
+PORT      STATE         SERVICE VERSION
+22739/udp open|filtered unknown
+23176/udp open|filtered unknown
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   50.01 ms 10.10.10.132
+
+Nmap scan report for 10.10.10.222
+Host is up (0.051s latency).
+Not shown: 999 closed tcp ports (reset), 992 closed udp ports (port-unreach)
+PORT      STATE         SERVICE         VERSION
+80/tcp    open          http            Apache httpd 2.4.38 ((Debian))
+|_http-generator: WordPress 5.2.4
+| http-robots.txt: 3 disallowed entries 
+| /wp-admin/ 
+|_/wp-content/plugins/wp-file-manager/lib/php/ /wp-content/uploads/
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-title: Powerzio&#039;s Blog &#8211; Internal News and Updates
+|_http-favicon: Unknown favicon MD5: 69286EE0F68B291945F235083FC6E301
+|_http-server-header: Apache/2.4.38 (Debian)
+68/udp    open|filtered dhcpc
+782/udp   open|filtered hp-managed-node
+1484/udp  open|filtered confluent
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=80%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%P=
+OS:x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)OPS(O1=
+OS:M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA
+OS:%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R=Y
+OS:%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD
+OS:=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%D
+OS:F=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40
+OS:%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 36.751 days (since Thu Apr 21 23:59:41 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   51.06 ms 10.10.10.222
+
+Nmap scan report for 10.10.10.223
+Host is up (0.051s latency).
+Not shown: 999 closed tcp ports (reset), 995 closed udp ports (port-unreach)
+PORT      STATE         SERVICE   VERSION
+3306/tcp  open          mysql     MySQL 5.5.5-10.7.3-MariaDB-1:10.7.3+maria~focal
+| mysql-info: 
+|   Protocol: 10
+|   Version: 5.5.5-10.7.3-MariaDB-1:10.7.3+maria~focal
+|   Thread ID: 9679
+|   Capabilities flags: 63486
+|   Some Capabilities: ConnectWithDatabase, Support41Auth, Speaks41ProtocolOld, InteractiveClient, SupportsTransactions, FoundRows, LongColumnFlag, SupportsLoadDataLocal, IgnoreSigpipes, DontAllowDatabaseTableColumn, ODBCClient, Speaks41ProtocolNew, IgnoreSpaceBeforeParenthesis, SupportsCompression, SupportsAuthPlugins, SupportsMultipleStatments, SupportsMultipleResults
+|   Status: Autocommit
+|   Salt: &+Gd@Te~l![+_"(CXqOx
+|_  Auth Plugin Name: mysql_native_password
+1037/udp  open|filtered ams
+1484/udp  open|filtered confluent
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.92%E=4%D=5/28%OT=3306%CT=1%CU=2%PV=Y%DS=2%DC=I%G=Y%TM=6292476D%
+OS:P=x86_64-pc-linux-gnu)SEQ(SP=107%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A)OPS(O
+OS:1=M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11N
+OS:WA%O6=M5B4ST11)WIN(W1=A9B0%W2=A9B0%W3=A9B0%W4=A9B0%W5=A9B0%W6=A9B0)ECN(R
+OS:=Y%DF=Y%T=40%W=A564%O=M5B4NNSNWA%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%
+OS:RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y
+OS:%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R
+OS:%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=
+OS:40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S
+OS:)
+
+Uptime guess: 38.438 days (since Wed Apr 20 07:31:21 2022)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   51.01 ms 10.10.10.223
+
+Post-scan script results:
+| ssh-hostkey: Possible duplicate hosts
+| Key 2048 b3:f9:71:4b:10:8e:99:a7:37:a5:45:5f:34:5c:35:68 (RSA) used by:
+|   10.10.10.10
+|   10.10.10.11
+| Key 256 e8:49:b0:a5:1f:9c:43:ef:a3:c3:d1:ed:96:31:ae:cb (ED25519) used by:
+|   10.10.10.10
+|   10.10.10.11
+| Key 256 0d:46:90:69:95:67:eb:7a:05:f9:62:eb:65:2d:88:1e (ECDSA) used by:
+|   10.10.10.10
+|_  10.10.10.11
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
